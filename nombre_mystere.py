@@ -17,6 +17,7 @@ def verification(valeur):
     return valeur
 
 
+print("Bienvenue dans le jeu du nombre mystère ! Vous devez trouver le nombre mystère compris entre 1 et 100.")
 nombre = randint(1, 100)
 element = input("Quel est le nombre ?")
 element = verification(element)
@@ -34,4 +35,4 @@ while element != nombre:
         element = input("Quel est le nombre ?")
         element = verification(element)
 
-print("Félicitations, vous avez trouvé le nombre mystere en", compteur, "coups")
+print("Félicitations ! Vous avez trouvé le nombre mystère en", compteur, "coups.")
